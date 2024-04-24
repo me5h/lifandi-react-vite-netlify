@@ -1,0 +1,7 @@
+.main-container {
+  position: relative;  /* This is crucial */
+  width: 100%;         /* Adjust to fit your design */
+  height: 100vh;       /* Adjust based on your layout needs */
+  overflow: hidden;    /* Ensures nothing spills out */
+  z-index: 1;
+}

@@ -1,0 +1,42 @@
+.slideshow-container {
+  position: relative;
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide anything outside this container */
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover; /* Cover the whole container */
+  background-position: center; /* Center the background image */
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+}
+
+.slideshow-image.active {
+  opacity: 1; /* Only the active image is visible */
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure buttons are clickable and above images */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
